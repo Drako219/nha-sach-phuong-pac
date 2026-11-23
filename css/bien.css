@@ -1,4 +1,5 @@
-/* Biến dùng chung cả nhóm: màu, font, bo góc, bóng. Muốn đổi thì nhắn nhóm, sửa trên nhánh chung/... */
+/* Design tokens shared by the whole team: colours, fonts, radius, shadows.
+   Tell the team before changing anything, and do it on a chung/... branch. */
 
 :root {
   --xanh: #0f5c4d;
