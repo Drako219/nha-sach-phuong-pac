@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Trang mẫu: copy file này thành ten-trang.html, sửa <title>, file css/nguoi-X.css, breadcrumb, thêm class dang-chon vào mục menu của trang -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tên trang | Nhà sách Phương Pắc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bien.css">
+  <link rel="stylesheet" href="css/chung.css">
+  <link rel="stylesheet" href="css/nguoi-X.css">
+</head>
+<body>
+<div class="thanh-tien-ich" id="dau">
+  <div class="khung">
+    <ul>
+      <li><a href="tel:19001234"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Hotline 1900 1234</a></li>
+      <li><a href="cua-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Hệ thống 12 cửa hàng</a></li>
+      <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 6h13v10H1zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Miễn phí giao hàng từ 300.000đ</li>
+    </ul>
+    <ul>
+      <li><a href="tra-cuu-don.html">Tra cứu đơn hàng</a></li>
+      <li><a href="tro-giup.html">Hỗ trợ</a></li>
+      <li><a href="dang-nhap.html">Đăng nhập</a></li>
+      <li><a href="dang-nhap.html#dang-ky">Đăng ký</a></li>
+      <li class="chon-ngon-ngu" aria-label="Chọn ngôn ngữ"><a href="#" aria-current="true">VI</a><a href="#">EN</a></li>
+    </ul>
+  </div>
+</div>
+<header class="dau-trang">
+  <div class="khung">
+    <a class="logo" href="index.html" aria-label="Về trang chủ">
+      <span class="logo__dau">P</span>
+      <span class="logo__chu">Phương Pắc<small>Nhà sách</small></span>
+    </a>
+    <form class="tim-kiem" role="search" action="danh-muc.html">
+      <input type="search" name="q" placeholder="Tìm tên sách, tác giả, nhà xuất bản…" aria-label="Tìm sách">
+      <button type="submit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Tìm</button>
+    </form>
+    <nav class="tien-ich-phai" aria-label="Tài khoản và giỏ hàng">
+      <a class="nut-icon" href="tai-khoan.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span><small>Xin chào</small><b>Tài khoản</b></span></a>
+      <a class="nut-icon" href="gio-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.2"/></svg><span class="so-dem">3</span><span><small>Giỏ hàng</small><b>335.000đ</b></span></a>
+    </nav>
+  </div>
+</header>
+<nav class="menu-chinh" aria-label="Điều hướng chính">
+  <input type="checkbox" id="mo-menu" class="menu-check">
+  <label for="mo-menu" class="lop-phu" aria-hidden="true"></label>
+  <label for="mo-menu" class="nut-menu" aria-label="Mở menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
+  <div class="khung">
+    <ul>
+      <li class="dong-menu"><label for="mo-menu">✕ Đóng menu</label></li>
+      <li class="nut-danh-muc"><a href="danh-muc.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Danh mục sách</a>
+        <div class="menu-lon"><div><h4>Văn học</h4><ul><li><a href="danh-muc.html">Tiểu thuyết</a></li><li><a href="danh-muc.html">Truyện ngắn</a></li><li><a href="danh-muc.html">Thơ</a></li><li><a href="danh-muc.html">Văn học kinh điển</a></li><li><a href="danh-muc.html">Light novel</a></li></ul></div><div><h4>Kinh tế</h4><ul><li><a href="danh-muc.html">Quản trị</a></li><li><a href="danh-muc.html">Marketing</a></li><li><a href="danh-muc.html">Khởi nghiệp</a></li><li><a href="danh-muc.html">Tài chính cá nhân</a></li><li><a href="danh-muc.html">Đầu tư</a></li></ul></div><div><h4>Thiếu nhi</h4><ul><li><a href="danh-muc.html">Truyện tranh</a></li><li><a href="danh-muc.html">Kiến thức</a></li><li><a href="danh-muc.html">Truyện cổ tích</a></li><li><a href="danh-muc.html">Sách tô màu</a></li><li><a href="danh-muc.html">Song ngữ</a></li></ul></div><div><h4>Kỹ năng sống</h4><ul><li><a href="danh-muc.html">Tâm lý</a></li><li><a href="danh-muc.html">Giao tiếp</a></li><li><a href="danh-muc.html">Tư duy</a></li><li><a href="danh-muc.html">Nuôi dạy con</a></li><li><a href="danh-muc.html">Sức khỏe</a></li></ul></div></div>
+      </li>
+      <li><a href="sach-moi-theo-tuan.html">Sách mới</a></li>
+      <li><a href="xep-hang.html">Bán chạy</a></li>
+      <li class="menu-noi-bat"><a href="khuyen-mai.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Khuyến mãi</a></li>
+      <li><a href="danh-muc.html">Sách ngoại văn</a></li>
+      <li><a href="chi-tiet-vpp.html">Văn phòng phẩm</a></li>
+      <li><a href="goc-doc-sach.html">Góc đọc sách</a></li>
+      <li><a href="cua-hang.html">Cửa hàng</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- Bỏ breadcrumb ở trang chủ. Trang con sửa lại các mục cho đúng. -->
+  <nav class="duong-dan khung" aria-label="Bạn đang ở đây">
+    <ol>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><span aria-current="page">Tên trang</span></li>
+    </ol>
+  </nav>
+
+  <section class="khung muc">
+    <h1>Tên trang</h1>
+    <!-- Nội dung trang viết ở đây -->
+  </section>
+</main>
+
+<footer class="chan-trang">
+  <div class="khung chan-trang__tren">
+    <div class="chan-trang__gioi-thieu">
+      <a class="logo" href="index.html"><span class="logo__dau">P</span><span class="logo__chu">Phương Pắc<small>Nhà sách</small></span></a>
+      <p>Hơn 60.000 đầu sách tiếng Việt và ngoại văn, giao nhanh toàn quốc, đổi trả trong 7 ngày.</p>
+      <ul class="lien-he-nhanh">
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>122 Trần Phú, Hà Đông, Hà Nội</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>1900 1234 (8:00 – 21:30)</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>hotro@phuongpac.vn</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Về Phương Pắc</h4>
+      <ul>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+        <li><a href="cua-hang.html">Hệ thống cửa hàng</a></li>
+        <li><a href="hoi-sach.html">Hội sách</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hỗ trợ khách hàng</h4>
+      <ul>
+        <li><a href="tro-giup.html">Trung tâm trợ giúp</a></li>
+        <li><a href="chinh-sach.html">Chính sách đổi trả</a></li>
+        <li><a href="tra-cuu-don.html">Tra cứu đơn hàng</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Khám phá</h4>
+      <ul>
+        <li><a href="goc-doc-sach.html">Góc đọc sách</a></li>
+        <li><a href="lich-su-kien.html">Lịch sự kiện</a></li>
+        <li><a href="cau-lac-bo.html">Câu lạc bộ đọc sách</a></li>
+        <li><a href="the-qua-tang.html">Thẻ quà tặng</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Thanh toán</h4>
+      <div class="thanh-toan-icon"><span>COD</span><span>VISA</span><span>MoMo</span><span>VNPay</span><span>ZaloPay</span></div>
+    </div>
+  </div>
+  <div class="chan-trang__duoi">
+    <div class="khung">
+      <p>© 2026 Nhà sách Phương Pắc. Bài tập lớn môn Thiết kế Web cơ bản, PTIT.</p>
+      <ul>
+        <li><a href="so-do-trang.html">Sơ đồ trang</a></li>
+        <li><a href="chinh-sach.html">Chính sách</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<a class="len-dau" href="#dau" aria-label="Về đầu trang"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+</body>
+</html>
