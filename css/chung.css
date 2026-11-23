@@ -1,5 +1,5 @@
-/* CSS chung cả nhóm: nền tảng, lưới 12 cột, thành phần, đầu trang, menu, chân trang.
-   Chỉ sửa trên nhánh chung/..., không sửa trong nhánh trang của mình. */
+/* Shared styles: base, 12-column grid, components, header, navigation, footer.
+   Change only on a chung/... branch, never inside a page branch. */
 
 
 * { box-sizing: border-box; }
@@ -33,7 +33,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   flex-shrink: 0;
 }
 
-/* Lưới 12 cột, khung 1200px */
+/* 12-column grid, 1200px container */
 .khung {
   width: min(1200px, 100% - 48px);
   margin-left: auto;
@@ -58,7 +58,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .muc { padding: 48px 0; }
 .muc--sat { padding-top: 0; }
 
-/* Nút và ô nhập */
+/* Buttons and form fields */
 .nut {
   display: inline-flex;
   align-items: center;
@@ -109,7 +109,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
   padding: 24px;
 }
 
-/* Tiêu đề mục */
+/* Section headings */
 .tieu-de-muc {
   display: flex;
   align-items: flex-end;
@@ -142,7 +142,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
   text-transform: uppercase;
 }
 
-/* Điều hướng tiện ích: thanh trên cùng */
+/* Utility navigation: top bar */
 .thanh-tien-ich {
   background-color: var(--xanh-dam);
   color: #cfe3dc;
@@ -158,7 +158,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .thanh-tien-ich a:hover { color: var(--trang); }
 .thanh-tien-ich .icon { width: 15px; height: 15px; vertical-align: -3px; margin-right: 6px; }
 
-/* Đầu trang: logo, tìm kiếm, tài khoản, giỏ hàng */
+/* Header: logo, search, account, cart */
 .dau-trang {
   background-color: var(--trang);
   border-bottom: 1px solid var(--vien);
@@ -259,7 +259,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
   text-align: center;
 }
 
-/* Điều hướng chính: cùng một vị trí trên mọi trang */
+/* Main navigation: same position on every page */
 .menu-chinh {
   position: sticky;
   top: 0;
@@ -293,7 +293,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .menu-chinh .menu-noi-bat .icon { width: 18px; height: 18px; }
 .menu-chinh .day-phai { margin-left: auto; color: var(--chu-phu); font-size: 14px; display: flex; gap: 8px; align-items: center; }
 
-/* Menu lớn hiện khi rê chuột, làm bằng :hover */
+/* Mega menu shown on hover (pure :hover) */
 .nut-danh-muc { position: relative; }
 .menu-lon {
   display: none;
@@ -313,7 +313,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .menu-lon li a { display: block; padding: 4px 0; color: var(--chu-phu); font-size: 14px; }
 .menu-lon li a:hover { color: var(--cam); }
 
-/* Điều hướng vị trí: breadcrumb */
+/* Location navigation: breadcrumb */
 .duong-dan { padding: 18px 0; font-size: 14px; color: var(--chu-phu); }
 .duong-dan ol { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .duong-dan li { display: flex; align-items: center; gap: 8px; }
@@ -321,7 +321,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .duong-dan a:hover { color: var(--xanh); text-decoration: underline; }
 .duong-dan [aria-current] { color: var(--chu); font-weight: 600; }
 
-/* Bìa sách vẽ bằng background */
+/* Book covers drawn with CSS backgrounds */
 .bia {
   position: relative;
   display: flex;
@@ -386,7 +386,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .bia--15 { background: linear-gradient(160deg, #e03b3b 0%, #9d0208 100%); }
 .bia--16 { background: linear-gradient(160deg, #0d4a6b 0%, #001d2e 100%); }
 
-/* Thẻ sách */
+/* Book card */
 .luoi-sach { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 24px; }
 .luoi-sach--4 { grid-template-columns: repeat(4, 1fr); }
 
@@ -439,7 +439,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .da-ban__thanh span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--vang), var(--cam)); }
 .da-ban p { margin-top: 4px; font-size: 12px; color: var(--chu-phu); }
 
-/* Chân trang: điều hướng footer */
+/* Footer navigation */
 .chan-trang { margin-top: 64px; background-color: #14231f; color: #b9c8c2; font-size: 14px; }
 .chan-trang__tren { display: grid; grid-template-columns: 4fr 2fr 2fr 2fr 2fr; gap: 32px; padding: 56px 0 40px; }
 .chan-trang .logo__chu { color: var(--trang); }
@@ -456,7 +456,7 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 .chan-trang__duoi ul { display: flex; gap: 20px; }
 .chan-trang__duoi li + li { margin-top: 0; }
 
-/* Nút về đầu trang: điều hướng nội bộ trang */
+/* Back-to-top button: in-page navigation */
 .len-dau {
   position: fixed;
   right: 28px;
@@ -473,16 +473,16 @@ textarea.o-nhap { height: 110px; padding: 12px 16px; resize: vertical; }
 }
 .len-dau:hover { background-color: var(--cam); }
 
-/* Menu ☰ trên điện thoại: checkbox + label, không dùng JS */
+/* Mobile ☰ menu: checkbox + label, no JavaScript */
 .menu-check, .nut-menu, .lop-phu, .dong-menu { display: none; }
 
-/* Menu lớn chỉ mở khi rê chuột trên máy có chuột, tránh kẹt mở trên điện thoại */
+/* Mega menu opens on hover only for pointer devices, so it never gets stuck open on phones */
 @media (hover: hover) and (min-width: 1025px) {
   .nut-danh-muc:hover .menu-lon,
   .nut-danh-muc:focus-within .menu-lon { display: grid; }
 }
 
-/* Nút chọn ngôn ngữ (giao diện, chưa có chức năng vì không dùng JS) */
+/* Language switcher (visual only, no JavaScript) */
 .chon-ngon-ngu { display: inline-flex; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 999px; overflow: hidden; }
 .chon-ngon-ngu a { padding: 2px 10px; font-weight: 700; }
 .chon-ngon-ngu a[aria-current="true"] { background-color: var(--vang); color: var(--xanh-dam); }
